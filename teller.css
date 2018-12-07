@@ -1,8 +1,9 @@
 
 .winner{
-	color:  blue;
+	color:  green;
 }
 body{
+	background: aquablue; 
 	font-family: 'PT Sans', sans-serif;
 	font-size: 250%;
 	text-align: center;
