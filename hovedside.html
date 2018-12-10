@@ -1,0 +1,212 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Yatzy spill</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        
+        <script type="text/javascript" src="js/yatzy.js"></script>
+        
+        <script type="text/javascript" src="js/lib.js"></script>
+        
+
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+
+    <body>
+        <h1>Yatzy</h1>
+        <div id="leftColumn">
+            <div id="faceDescriptionOuter">
+                <h3>Regler</h3>
+                <div id="faceDescription">Klikk på tabellen</div>
+            </div>
+            
+            
+            
+         
+            
+        </div>
+        <div id="settings">
+            <label for="selectPlayer">Antall spillere</label>
+            <select id="selectPlayer" name="selectPlayer">
+                <option value="0">
+                    Velg
+                </option>
+                <option value="1">
+                    1
+                </option>
+                <option value="2">
+                    2
+                </option>
+                <option value="3">
+                    3
+                </option>
+                <option value="4">
+                    4
+                </option>
+            </select>
+        </div>
+        <div id="centerColumn">
+            <table id="resultTable">
+                
+                <caption>Daniels Yatzycasino</caption>
+                <thead id="gamersnames">
+                    <tr>
+                        
+                        <th scope="col" class="header faceName"></th>
+                        <th scope="col" class="header player1">1</th>
+                        <th scope="col" class="header player2">2</th>
+                        <th scope="col" class="header player3">3</th>
+                        <th scope="col" class="header player4">4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="aces faceName">Ener</td>
+                        <td class="aces player1"></td>
+                        <td class="aces player2"></td>
+                        <td class="aces player3"></td>
+                        <td class="aces player4"></td>
+                    </tr>
+                    <tr>
+                        <td class="twos faceName">Toer</td>
+                        <td class="twos player1"></td>
+                        <td class="twos player2"></td>
+                        <td class="twos player3"></td>
+                        <td class="twos player4"></td>
+                    </tr>
+                    <tr>
+                        <td class="threes faceName">Treer</td>
+                        <td class="threes player1"></td>
+                        <td class="threes player2"></td>
+                        <td class="threes player3"></td>
+                        <td class="threes player4"></td>
+                    </tr>
+                    <tr>
+                        <td class="fours faceName">Firer</td>
+                        <td class="fours player1"></td>
+                        <td class="fours player2"></td>
+                        <td class="fours player3"></td>
+                        <td class="fours player4"></td>
+                    </tr>
+                    <tr>
+                        <td class="fives faceName">Femmer</td>
+                        <td class="fives player1"></td>
+                        <td class="fives player2"></td>
+                        <td class="fives player3"></td>
+                        <td class="fives player4"></td>
+                    </tr>
+                    <tr>
+                        <td class="sixes faceName">Sekser</td>
+                        <td class="sixes player1"></td>
+                        <td class="sixes player2"></td>
+                        <td class="sixes player3"></td>
+                        <td class="sixes player4"></td>
+                    </tr>
+                    <tr>
+                        <td class="upperSum faceName">Sum</td>
+                        <td class="upperSum player1"></td>
+                        <td class="upperSum player2"></td>
+                        <td class="upperSum player3"></td>
+                        <td class="upperSum player4"></td>
+                    </tr>
+                    <tr>
+                        <td class="bonus faceName">Bonus</td>
+                        <td class="bonus player1"></td>
+                        <td class="bonus player2"></td>
+                        <td class="bonus player3"></td>
+                        <td class="bonus player4"></td>
+                    </tr>
+                    <tr>
+                        <td class="onePair faceName">1 par</td>
+                        <td class="onePair player1"></td>
+                        <td class="onePair player2"></td>
+                        <td class="onePair player3"></td>
+                        <td class="onePair player4"></td>
+                    </tr>
+                    <tr>
+                        <td class="twoPair faceName">2 par</td>
+                        <td class="twoPair player1"></td>
+                        <td class="twoPair player2"></td>
+                        <td class="twoPair player3"></td>
+                        <td class="twoPair player4"></td>
+                    </tr>
+                    <tr>
+                        <td class="threeOfAKind faceName">Tre like</td>
+                        <td class="threeOfAKind player1"></td>
+                        <td class="threeOfAKind player2"></td>
+                        <td class="threeOfAKind player3"></td>
+                        <td class="threeOfAKind player4"></td>
+                    </tr>
+                    <tr>
+                        <td class="fourOfAKind faceName">Fire like</td>
+                        <td class="fourOfAKind player1"></td>
+                        <td class="fourOfAKind player2"></td>
+                        <td class="fourOfAKind player3"></td>
+                        <td class="fourOfAKind player4"></td>
+                    </tr>
+                    <tr>
+                        <td class="smallStraight faceName">Liten straight</td>
+                        <td class="smallStraight player1"></td>
+                        <td class="smallStraight player2"></td>
+                        <td class="smallStraight player3"></td>
+                        <td class="smallStraight player4"></td>
+                    </tr>
+                    <tr>
+                        <td class="largeStraight faceName">Stor straight</td>
+                        <td class="largeStraight player1"></td>
+                        <td class="largeStraight player2"></td>
+                        <td class="largeStraight player3"></td>
+                        <td class="largeStraight player4"></td>
+                    </tr>
+                    <tr>
+                        <td class="fullHouse faceName">Hus</td>
+                        <td class="fullHouse player1"></td>
+                        <td class="fullHouse player2"></td>
+                        <td class="fullHouse player3"></td>
+                        <td class="fullHouse player4"></td>
+                    </tr>
+                    <tr>
+                        <td class="chance faceName">Sjanse</td>
+                        <td class="chance player1"></td>
+                        <td class="chance player2"></td>
+                        <td class="chance player3"></td>
+                        <td class="chance player4"></td>
+                    </tr>
+                    <tr>
+                        <td class="yahtzee faceName">Yatzy</td>
+                        <td class="yahtzee player1"></td>
+                        <td class="yahtzee player2"></td>
+                        <td class="yahtzee player3"></td>
+                        <td class="yahtzee player4"></td>
+                    </tr>
+                    <tr class="lowerSum">
+                        <td class="lowerSum faceName">Lav sum</td>
+                        <td class="lowerSum player1"></td>
+                        <td class="lowerSum player2"></td>
+                        <td class="lowerSum player3"></td>
+                        <td class="lowerSum player4"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="rightColumn">
+            <div id="communicationScreen">
+                
+                <noscript><p>For å kunne spille må du ha <a href="http://en.wikipedia.org/wiki/Javascript">Javascript</a></p></noscript>
+                <p id="communication">Velkommen til Daniels Yatzycasino!
+                    <br>Velg antall spillere først
+                </p>
+            </div>
+            <div id="imgDice">
+                <img id="die0" class="dice" src="img/dice/1.png" alt="">
+                <img id="die1" class="dice" src="img/dice/2.png" alt="">
+                <img id="die2" class="dice" src="img/dice/3.png" alt="">
+                <img id="die3" class="dice" src="img/dice/4.png" alt="">
+                <img id="die4" class="dice" src="img/dice/5.png" alt="">
+            </div>
+            <input type="button" id="rollDice" name="rollDice" value="Kast terninger">
+        </div>
+    </body>
+</html>
